@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:800|Merriweather+Sans|Share+Tech+Mono");
+/* NavBar css */
+.navbar {
+  display: flex;
+  align-content: space-between;
+  width: 100%;
+  /* overflow: hidden; */
+  background-color: rgb(116, 114, 114);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100px;
+  background: linear-gradient(to right, #36ecde, #000);
+}
+.navbar-brand {
+  font-size: 70px;
+  width: 50%;
+  padding: 20px 10px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font: 200% impact, futura, sans-serif;
+  text-transform: uppercase;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar-nav {
+  width: 50%;
+  align-content: space-between;
+  padding: 25px 15px;
+}
+.navbar-nav a {
+  /* float: left; */
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  padding: 25px 15px;
+  font-style: oblique;
+}
+
+.nav-link {
+  font-size: 25px;
+  width: 40%;
+  color: orange;
+}
+/* home css */
+.welcome {
+  height: 50%;
+  width: 70%;
+  margin-top: 30px;
+  margin-left: 200px;
+  margin-bottom: 30px;
+  background-color: rgb(15, 18, 29);
+  color: rgb(243, 237, 237);
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+.welcome h1 {
+  color: azure;
+}
+:root {
+  --ui-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+  fill: rgba(0, 0, 0, 0.54);
+  --ui-shadow-border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+
+  padding: 0;
+  margin: 0;
+
+  color: #2a3747;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.View {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-size: cover;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+  padding: 15px;
+  font-family: "Share Tech Mono", monospace;
+  border-bottom: var(--ui-shadow-border);
+  box-shadow: var(--ui-shadow);
+}
+
+.Message {
+  background: white;
+  padding: 30px;
+  border-bottom: var(--ui-shadow-border);
+  box-shadow: var(--ui-shadow);
+  width: 400px;
+  height: 400px;
+  /* margin-bottom: 20px; */
+}
+
+.Message img {
+  width: 80%;
+}
+.Message > .Title {
+  padding-bottom: 20px;
+}
+
+.Message > .Details {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+}
+
+.NavButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.NavButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 55px;
+  width: 150px;
+
+  background: #fa4141;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+
+  text-transform: capitalize;
+
+  border-bottom: var(--ui-shadow-border);
+  box-shadow: var(--ui-shadow);
+}
+
+/* Blog css */
+/* Courses css */
+/* contact css */
+.contact-Us {
+  background-color: #f0f0f0;
+  border: 5px solid #666666;
+  width: 50%;
+  margin-top: 25px;
+  align-items: center;
+  align-self: center;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.contact-Us form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+  justify-self: center;
+  padding-bottom: 20px;
+}
+.contact-Us span {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(21, 1, 58);
+  padding: 15px;
+}
+
+.contact-Us textarea {
+  margin-bottom: 15px;
+}
+.contact-Us button {
+  height: 40px;
+  margin: 10px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(21, 1, 58);
+  background: rgb(187, 189, 189);
+  border-radius: 10px;
+}
+/* sign up css */
+.Join-Us {
+  background-color: #f0f0f0;
+  border: 5px solid #666666;
+  width: 50%;
+  margin-top: 25px;
+  align-items: center;
+  align-self: center;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.Join-Us form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+  justify-self: center;
+  padding-bottom: 20px;
+}
+.Join-Us span {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(21, 1, 58);
+  padding: 15px;
+}
+
+.Join-Us button {
+  height: 40px;
+  margin: 10px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(21, 1, 58);
+  background: rgb(187, 189, 189);
+  border-radius: 10px;
+}
+.Email-me {
+  display: flex;
+}
+.Privacy-Policy {
+  display: flex;
+}
+/* .Sign-In  css */
+
+.Sign-In {
+  background-color: #f0f0f0;
+  border: 5px solid #666666;
+  width: 50%;
+  margin-top: 25px;
+  align-items: center;
+  align-self: center;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.Sign-In form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+  justify-self: center;
+  padding-bottom: 20px;
+}
+.Sign-In span {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(21, 1, 58);
+  padding: 15px;
+}
+
+.Sign-In button {
+  height: 40px;
+  margin: 10px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(21, 1, 58);
+  background: rgb(187, 189, 189);
+  border-radius: 10px;
+}
+/* footer css */
+.footer-div {
+  height: 100px;
+  background-color: darkcyan;
+  margin-top: 10px;
+  text-align: center;
+}
+.footer-div a {
+  margin: 20px;
+  height: 50px;
+  width: 80px;
+  font-size: 20px;
+  font-style: oblique;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(21, 1, 58);
+}

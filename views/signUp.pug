@@ -1,0 +1,25 @@
+extends layout 
+block layout-content
+    include navBar
+    div.Join-Us 
+        h2 Create your account and join us
+        p I already have an account 
+        button.buttonComponent Sign IN
+        form(action="/contact-action" method="POST")
+            div.nameDiv
+                span * First Name :
+                input(type="text", name="name", placeholder="")
+                span * Last Name :
+                input(type="text", name="name", placeholder="")
+            span * Email: 
+            input(type="text", name="email", placeholder="")
+            span * password: 
+            input(type="password", name="password", placeholder="")
+            div.Privacy-Policy
+                input(type='checkbox' checked=false) 
+                p I agree to the Terms and Conditions. I have read the Privacy Policy
+            div.Email-me
+                input(type='checkbox' checked=false) 
+                p Email me product tips, the latest releases, hot new channels, and customer-exclusive discounts. (I can always opt out later.)
+            button.buttonComponent(@click.prevent="onClick")  SIGN UP
+    include footer 

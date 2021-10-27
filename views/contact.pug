@@ -1,0 +1,15 @@
+extends layout
+
+block layout-content
+    include navBar
+    div.contact-Us 
+        h2="Contact Us"
+        form(action="/contact-action" method="POST")
+            span Name :
+            input(type="text", name="name", placeholder="")
+            span Email: 
+            input(type="text", name="email", placeholder="")
+            span Message: 
+            textarea(name="story",rows="10" cols="40")
+            button.buttonComponent(@click.prevent="onClick")  send your message
+    include footer

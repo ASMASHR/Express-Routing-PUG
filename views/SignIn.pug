@@ -1,0 +1,14 @@
+extends layout 
+block layout-content
+   
+    div.Sign-In 
+        h2="sign in"
+        form(action="/contact-action" method="POST")
+            span Email: 
+            input(type="text", name="email", placeholder="")
+            span Password: 
+            input(type="password", name="password", placeholder="")
+            div
+                input(type='checkbox', checked=false) 
+                p remember me
+            button.buttonComponent(@click.prevent="onClick")  Sign In
